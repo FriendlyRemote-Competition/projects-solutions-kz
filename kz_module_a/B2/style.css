@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 600px;
+    padding: 30px;
+}
+
+#topic {
+    margin: 10px 0 25px;
+    color: #666;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th:not(:first-child),
+td:not(:first-child) {
+    text-align: right;
+}
+
+.maj {
+    font-weight: bold;
+    color: green;
+}
