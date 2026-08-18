@@ -16,7 +16,10 @@ body{
 
 .container{
   display: flex;
+<<<<<<< HEAD
   perspective: 1000px;
+=======
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2
 }
 
 .img-box{
@@ -30,6 +33,7 @@ body{
   height: 100%;
   object-fit: cover;
   transition: 0.5s;
+<<<<<<< HEAD
 }
 
 /* My Code */
@@ -71,3 +75,6 @@ body{
   scale: 1.5;
   z-index: 1;
 }
+=======
+}
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2

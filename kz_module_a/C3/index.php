@@ -51,6 +51,7 @@ if (isset($_POST['save'])) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C3</title>
+<<<<<<< HEAD
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 </head>
@@ -66,6 +67,21 @@ if (isset($_POST['save'])) {
                 <?php } ?>
 
                 <th class="text-center p-2 bg-black text-white">
+=======
+</head>
+<body>
+    <form method="post" action="index.php">
+        <table>
+            <tr>
+
+                <?php foreach ($fields as $index => $name) { ?>
+                    <th>
+                        <input type="text" name="fields[<?= $index ?>]" value="<?= htmlspecialchars($name) ?>" />
+                    </th>
+                <?php } ?>
+
+                <th>
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2
                     Delete
                 </th>
             </tr>
@@ -73,6 +89,7 @@ if (isset($_POST['save'])) {
             <?php foreach ($rows as $rowIndex => $row) { ?>
                 <tr>
                     <?php foreach (array_values($row) as $index => $value) { ?>
+<<<<<<< HEAD
                         <td class="p-2">
                             <input type="text" name="rows[<?= $rowIndex ?>][<?= $index ?>]" value="<?= htmlspecialchars($value) ?>" class="form-control" />
                         </td>
@@ -80,6 +97,15 @@ if (isset($_POST['save'])) {
 
                     <td class="p-2">
                         <button class="btn btn-danger" type="submit" name="delete" value="<?= $rowIndex ?>">
+=======
+                        <td>
+                            <input type="text" name="rows[<?= $rowIndex ?>][<?= $index ?>]" value="<?= htmlspecialchars($value) ?>" />
+                        </td>
+                    <?php } ?>
+
+                    <td>
+                        <button class="red" type="submit" name="delete" value="<?= $rowIndex ?>">
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2
                             Delete
                         </button>
                     </td>
@@ -87,12 +113,21 @@ if (isset($_POST['save'])) {
             <?php } ?>
         </table>
 
+<<<<<<< HEAD
         <div class="d-flex gap-2 justify-content-end align-items-center mt-3">
             <button class="btn btn-secondary" type="submit" name="add" value="1">
                 Add row
             </button>
 
             <button class="btn btn-primary" type="submit" name="save" value="1">
+=======
+        <div class="buttons">
+            <button class="gray" type="submit" name="add" value="1">
+                Add row
+            </button>
+
+            <button class="blue" type="submit" name="save" value="1">
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2
                 Save
             </button>
         </div>

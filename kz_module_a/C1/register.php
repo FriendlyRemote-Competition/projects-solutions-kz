@@ -30,6 +30,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>C1</title>
+<<<<<<< HEAD
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
 </head>
@@ -68,6 +69,32 @@
                 </div>
             </div>
         </div>
+=======
+</head>
+<body>
+    <div class="card">
+        <h1>
+            Register
+        </h1>
+
+        <form method="post">
+            <input type="text" name="username" placeholder="Username" />
+
+            <input type="password" name="password" placeholder="******" />
+
+            <button class="btn" type="submit">
+                Register
+            </button>
+        </form>
+
+        <p class="message">
+            <?= $message ?>
+        </p>
+
+        <a class="link" href="index.php">
+            Login
+        </a>
+>>>>>>> 9ec4524b291f337ed02d9d77ae1fcd2738c1b8b2
     </div>
 </body>
 </html>
