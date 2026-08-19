@@ -1,0 +1,22 @@
+/**
+    Variables for personnel settings.
+ */
+:root {
+    --reader-font-size: 18px;
+    --reader-line-height: 1.7;
+    --reader-width: 720px;
+}
+
+.reader {
+    font-size: var(--reader-font-size);
+    line-height: var(--reader-line-height);
+}
+
+mark {
+    padding: 0 2px;
+}
+
+:focus-visible {
+    outline: 3px solid var(--bs-primary);
+    outline-offset: 2px;
+}
