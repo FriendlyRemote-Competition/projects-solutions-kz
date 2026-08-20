@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/brand/favicon.svg" />
+
+    <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./assets/fonts/CormorantGaramond-SemiBold.woff2"
+        crossorigin
+    />
+    <link
+        rel="preload"
+        as="font"
+        type="font/woff2"
+        href="./assets/fonts/Inter-Regular.woff2"
+        crossorigin
+    />
+
+    <link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body class="wrapper">
+    <header id="header" class="header" data-header>
+        <div class="header__container container">
+            <a class="header__logo" href="#hero">
+                <img  src="./assets/brand/su-hotel-logo-light.svg" alt="The SU hotel Shanghai Logo" width="360" height="84"/>
+            </a>
+
+            <nav class="header__nav" aria-label="Primary">
+                <ul class="header__list">
+                    <li >
+                        <a class="header__link" href="#hotel">
+                            Hotel
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="header__link" href="#dining">
+                            Dining
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="header__link" href="#wellness">
+                            Wellness
+                        </a>
+                    </li>
+
+                    <li >
+                        <a class="header__link" href="#shanghai">
+                            Shanghai
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <p class="header__lang">
+                    <span aria-hidden="true">
+                        EN
+                    </span>
+
+                    <span class="visually-hidden">
+                        Language: English
+                    </span>
+                </p>
+
+                <button class="btn btn-outline header__book" type="button" data-booking-open>
+                    Book your stay
+                </button>
+
+                <button class="btn-square header__menu" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-open>
+                    <img class="icon" src="./assets/icons/icon-menu.svg" alt="Menu Icon" width="32" height="32" />
+
+                    <span class="visually-hidden">
+                        Open Menu
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <dialog class="menu" id="mobile-menu" aria-label="Main Menu" data-menu>
+        <div class="menu__panel">
+            <button class="btn-square menu__close" type="button" data-menu-close>
+                <img class="icon" src="./assets/icons/icon-close.svg" alt="Close Icon" width="32" height="32" />
+                <span class="visually-hidden">
+                    Close Menu
+                </span>
+            </button>
+
+            <nav aria-label="Mobile">
+                <ul class="menu__list">
+                    <li>
+                        <a class="menu__link" href="#hotel" data-menu-link>
+                            Hotel
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#rooms" data-menu-link>
+                            Rooms
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#dining" data-menu-link>
+                            Dining
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#wellness" data-menu-link>
+                            Wellness
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu__link" href="#shanghai" data-menu-link>
+                            Shanghai
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="btn btn-dark menu__book" type="button" data-booking-open>
+                Book your stay
+            </button>
+        </div>
+    </dialog>
+
+    <main id="main">
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="hero__media">
+                <picture>
+                    <source media="(max-width: 860px)" srcset="./assets/images/hero-shanghai-hotel-mobile.webp" type="image/webp" />
+                    <source srcset="./assets/images/hero-shanghai-hotel.webp" type="image/webp" />
+
+                    <img class="hero__image" src="./assets/images/hero-shanghai-hotel.jpg" alt="The SU hotel terrace" width="2048" height="1152" fetchpriority="high" decoding="async" data-alt-key="hero-shanghai-hotel.webp" />
+                </picture>
+            </div>
+
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <p class="eyebrow hero__eyebrow" data-reveal="1">
+                        A quiet address in a city of movement
+                    </p>
+
+                    <h1 class="hero__title" id="hero-title" data-reveal="2">
+                        Stay close to the soul of Shanghai
+                    </h1>
+
+                    <p class="hero__lead" data-reveal="3">
+                        River light, Art Deco restraint and intuitive hospitality meet
+                        beside Suzhou Creek.
+                    </p>
+
+                    <div class="hero__actions" data-reveal="4">
+                        <button class="btn btn-brass hero__book" type="button" data-booking-open>
+                            Book your stay
+                        </button>
+
+                        <a class="btn-text hero__discover" href="#hotel">
+                            Discover the hotel
+
+                            <img class="icon" src="./assets/icons/icon-arrow.svg" alt="Arrow Icon" width="32" height="32" />
+                        </a>
+                    </div>
+                </div>
+
+                <a class="hero__scroll" href="#hotel">
+                    <span>
+                        Scroll
+                    </span>
+
+                    <span class="hero__scroll-line" aria-hidden="true"></span>
+                </a>
+            </div>
+        </section>
+
+        <section id="hotel" class="section story" aria-labelledby="story-title">
+            <div class="story__container container">
+                <figure class="story__figure">
+                    <img class="story__image" src="./assets/images/story-lobby.webp" alt="Story Lobby Image" width="1536" height="2048" loading="lazy" decoding="async" data-alt-key="story-lobby.webp" />
+                </figure>
+
+                <div class="story__body">
+                    <p class="eyebrow" data-story-eyebrow>
+                        Between water and city
+                    </p>
+
+                    <h2 class="story__title" id="story-title" data-story-heading>
+                        A Shanghai stay with room to breathe
+                    </h2>
+
+                    <p class="story__text" data-story-body></p>
+
+                    <dl class="story__stats" data-story-stats></dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="rooms" class="section rooms" aria-labelledby="rooms-title">
+            <div class="rooms__container container">
+                <div class="section__head">
+                    <div class="section__headings">
+                        <p class="eyebrow">
+                            Rooms & Suites
+                        </p>
+
+                        <h2 class="section__title" id="rooms-title">
+                            A private view of Shanghai
+                        </h2>
+                    </div>
+
+                    <p class="section__intro">
+                        Four considered spaces, each composed for rest, conversation and the changing river light.
+                    </p>
+                </div>
+
+                <div class="rooms__card" data-rooms-card>
+                    <div class="rooms__media">
+                        <img class="rooms__image" src="./assets/images/room-deluxe-river.webp" alt="Deluxe River Room Image" width="2048" height="1536" loading="lazy" decoding="async" data-room-image />
+                    </div>
+
+                    <div class="rooms__panel">
+                        <p class="rooms__index" data-room-index></p>
+
+                        <h3 class="rooms__name" data-room-name></h3>
+
+                        <p class="rooms__description" data-room-description></p>
+
+                        <dl class="rooms__meta" data-room-meta></dl>
+
+                        <p class="rooms__price" data-room-price></p>
+
+                        <div class="rooms__actions">
+                            <button class="btn-text btn-text--rule rooms__details" type="button" aria-expanded="false" aria-controls="room-amenities" data-room-details>
+                                View room details
+                            </button>
+
+                            <button class="btn btn-dark" type="button" data-room-book>
+                                Book this room
+                            </button>
+
+
+                        </div>
+
+                        <div class="rooms__amenities" id="room-amenities" hidden>
+                            <h4 class="rooms__amenities-title">
+                                In this room
+                            </h4>
+
+                            <ul class="rooms__amenities-list" data-room-amenities></ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rooms__nav">
+                    <button class="btn-circle rooms__prev" type="button" data-room-prev>
+                        <img class="icon" src="./assets/icons/icon-arrow.svg" alt="Icon Arrow" width="32" height="32" />
+
+                        <span class="visually-hidden">
+                            Previous room
+                        </span>
+                    </button>
+
+                    <div class="rooms__tabs" role="tablist" aria-label="Rooms and suites" data-room-tabs>
+
+                    </div>
+
+                    <button class="btn-circle" type="button" data-room-next>
+                        <img class="icon" src="./assets/icons/icon-arrow.svg" alt="Icon Arrow" width="32" height="32" />
+
+                        <span class="visually-hidden">
+                            Next room
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer__container container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img class="footer__logo" src="./assets/brand/su-hotel-logo-light.svg" alt="The SU Hotel Logo" width="360" height="84" loading="lazy" />
+
+                    <address class="footer__address">
+                        <p data-footer-address>
+                            88 North Suzhou Road, Shanghai 200085, China
+                        </p>
+
+                        <p class="footer__contact">
+                            <a href="tel:+862168888800" data-footer-phone>
+                                +86 21 6888 8800
+                            </a>
+
+                            <a href="mailto:stay@thesuhotel.example">
+                                stay@thesuhotel.example
+                            </a>
+                        </p>
+                    </address>
+                </div>
+
+                <nav class="footer__nav" aria-label="Footer">
+                    <ul class="footer__list" data-footer-nav>
+                        <li >
+                            <a href="#hotel">
+                                Hotel
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#rooms">
+                                Rooms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#dining">
+                                Dining
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#wellness">
+                                Wellness
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#shanghai">
+                                Shanghai
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__container">
+                    <p class="eyebrow">
+                        Letters from Shanghai
+                    </p>
+
+                    <h2 class="footer__title">
+                        Stay close to the story
+                    </h2>
+
+                    <form class="newsletter" novalidate data-newsletter>
+                        <label class="label newsletter__label" for="newsletter-email">
+                            Email address
+                        </label>
+
+                        <div class="newsletter__row">
+                            <input class="input newsletter__input" type="email" id="newsletter-email" name="email" placeholder="you@example.com" autocomplete="email" aria-describedby="newsletter-status" data-newsletter-input />
+
+                            <button class="btn-circle newsletter__submit" type="submit">
+                                <img class="icon" src="./assets/icons/icon-arrow.svg" alt="Icon Arrow" width="32" height="32" />
+
+                                <span class="visually-hidden">
+                                    Subscribe to the newsletter
+                                </span>
+                            </button>
+                        </div>
+
+                        <p class="newsletter__status" id="newsletter-status" role="status" aria-live="polite" data-newsletter-status></p>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; <span data-footer-year>2026</span> The Su Hotel Shanghai
+                </p>
+
+                <ul class="footer__social" data-footer-social>
+                    <li>
+                        WeChat
+                    </li>
+                    <li>
+                        Instagram
+                    </li>
+                    <li>
+                        Little Red Book
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/menu.js"></script>
+    <script src="./scripts/story.js"></script>
+    <script src="./scripts/rooms.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
